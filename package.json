@@ -1,0 +1,27 @@
+{
+  "name": "dave-mn",
+  "version": "4.0.0",
+  "author": "Dave McNally",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/davemcnally/dave-mn.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "^1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-sass": "^0.7.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-imageoptim": "^1.4.1",
+    "grunt-jekyll": "^0.4.2",
+    "grunt-rsync": "^0.6.2",
+    "grunt-svgmin": "^0.4.0",
+    "load-grunt-tasks": "^0.6.0"
+  },
+  "dependencies": {
+    "dotenv": "^1.1.0"
+  }
+}

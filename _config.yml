@@ -1,0 +1,8 @@
+site_name: 'Dave McNally'
+description: 'Designer & Front-End Developer'
+permalink: /blog/:title
+exclude: [node_modules, scss, Gruntfile.js, LICENSE, package.json, README.md, js, Gemfile, Gemfile.lock, vendor, CNAME]
+url: 'http://dave.mn'
+markdown: rdiscount
+pygments: true
+future: false

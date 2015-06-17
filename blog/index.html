@@ -1,0 +1,13 @@
+---
+layout: page
+title: Blog Archive
+---
+
+{% for post in site.posts %}
+    <div class="group blog_archive">
+        <p class="post_meta archive_meta"><time datetime="{{ post.date }}">Published on {{ post.date | date: "%B %d, %Y" }}</time></p>
+
+        <h1 class="post_title post_{{ post.slug }} archive_title"><a href="{{ post.url }}" title="Read This Post">{{ post.title }}</a></h1>
+        <p class="archive_desc">{{ post.desc }}</p>
+    </div><!-- //summary -->
+{% endfor %}

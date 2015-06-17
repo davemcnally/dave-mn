@@ -1,0 +1,695 @@
+$dark: #383838;
+$light: #F1F1F1;
+$highlight: #B42C4F;
+$hover: #D8345E;
+
+$sans: 'Gotham A', 'Gotham B', Gotham, Helvetica, sans-serif;
+
+body {
+    background: #FDFDFD;
+    font-family: $sans;
+    color: $dark;
+}
+
+::selection {
+    background: $highlight;
+    color: $light;
+}
+
+code {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+}
+
+.wrap {
+    width: 87.5%;
+    margin: 0 auto;
+}
+
+b {
+    font-weight: 700;;
+}
+
+header {
+    background: url('../img/masthead_small.jpg') no-repeat 100% 50%/cover;
+    padding: 50px 0 150px;
+    color: $light;
+    margin-bottom: 80px;
+}
+
+.logo {
+    float: left;
+    margin-top: 10px;
+}
+
+.logo svg path {
+    transition: all 0.3s ease;
+    &:hover {
+        fill: $highlight;
+    }
+}
+
+nav {
+    float: left;
+    margin-left: 20px;
+    padding: 10px 0 10px 10px;
+    font-weight: 700;
+    border-left: 2px solid $light;
+}
+
+nav ul li {
+    margin-bottom: 5px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+nav ul li a {
+    transition: all 0.3s ease;
+    &:hover {
+        color: $hover;
+    }
+}
+
+main {
+    position: static;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.cta {
+    margin: 80px 0;
+    line-height: 1;
+}
+
+.button {
+    border-radius: 6px;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.button-outline {
+    border: 2px solid $highlight;
+    color: $highlight;
+    &:hover {
+        border: 2px solid $hover;
+        color: $hover;
+    }
+}
+
+.button-fill {
+    background: $highlight;
+    color: $light;
+    border-radius: 6px;
+    border: 1px solid #861F1F;
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.40), inset 0px -4px 0px 0px rgba(0,0,0,0.35);
+    text-shadow: 0 2px 1px rgba(0, 0, 0, .3);
+    &:hover {
+        background: $hover;
+    }
+    &:active {
+        background: #861434;
+        box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.35);   
+    }
+}
+
+.panel {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    color: $light;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    font-size: 24px;
+    margin-bottom: 80px;
+    position: static;
+}
+
+.panel-work {
+    background-image: url('../img/client_small.jpg');
+}
+
+.panel-blog {
+    background-image: url('../img/blog_small.jpg');
+}
+
+.showcase img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.showcase h3 {
+    font-size: 28px;
+    margin: 30px 0 5px;
+}
+
+.showcase-link {
+    display: block;
+    color: $highlight;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    &:hover {
+        color: $hover;
+    }
+}
+
+.showcase p {
+    line-height: 1.5;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.showcase.showcase_solo {
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 80px;
+}
+
+.date-stamp time, .date-stamp p {
+    display: inline;
+}
+
+.date-stamp {
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.the-post h4 a {
+    color: $highlight;
+    font-size: 24px;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+    &:hover {
+        color: $hover;
+    }
+}
+
+.the-post p {
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 30px 0 0 0;
+}
+
+.summary {
+    border-bottom: 1px solid $dark;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    &:nth-child(3) {
+        margin-bottom: 0;
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+footer {
+    border-top: 1px solid #D8D8D8;
+    text-align: center;
+    padding: 80px 0;
+}
+
+footer h5 {
+    font-size: 12px;
+    color: #575757;
+    font-weight: 200;
+    margin-bottom: 5px;
+    a {
+        color: $highlight;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $hover;
+        }
+    }
+}
+
+footer p {
+    font-size: 14px;
+}
+
+#socials {
+    margin: 40px auto 20px;
+    a {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+#disqus_thread {
+    margin-bottom: 100px;
+}
+
+.post_title {
+    margin-bottom: 30px;
+}
+
+.blog_post p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.blog_post p.post_meta {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 80px;
+}
+
+.twitter-button {
+    margin: 0 auto;
+    display: block;
+}
+
+.twitter-button, .twitter-button svg {
+    width: 20px;
+    max-width: 20px;
+    height: auto;
+}
+
+.twitter-button svg path {
+    fill: $highlight;
+    &:hover {
+        fill: $hover;
+    }
+}
+
+.pagination {
+    display: none;
+}
+
+h1.archive_title {
+    color: $highlight;
+    transition: all 0.3s ease;
+    &:hover {
+        color: $hover;
+    }
+}
+
+.blog_archive {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #D8D8D8;
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+.archive_meta {
+    font-size: 14px;
+}
+
+.archive_desc {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.other_clients {
+    margin-top: 80px;
+}
+
+.other_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.other_column {
+    margin-bottom: 10px;
+}
+
+.a_client {
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.a_client a {
+    font-size: 18px;
+    color: $highlight;
+    transition: all 0.3s ease;
+    &:hover {
+        color: $hover;
+    }
+}
+
+h1.contact_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;;
+}
+
+h2.contact_subtitle {
+    font-size: 22px;
+    margin: 30px 0 60px;
+    line-height: 1.5;
+}
+
+.contact_page p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+#colophon {
+    margin-bottom: 80px;
+    a {
+        color: $highlight;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $hover;
+        }
+    }
+    h1 {
+        margin-bottom: 30px;
+    }
+}
+
+article img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+article blockquote {
+    border-left: 4px solid #D8D8D8;
+    font-weight: 200;
+    padding-left: 20px;
+    margin: 20px 20px 60px;
+    font-style: italic;
+}
+
+article code {
+    color: $light;
+    font-size: 16px;
+    line-height: 1;
+}
+
+article pre {
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: $dark;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+article ul, article ol {
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+article p a {
+    color: $highlight;
+    &:hover {
+        color: $hover;
+    }
+}
+
+.tileables_page .intro {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.tileables_page .pack {
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #D8D8D8;
+    h2 {
+        font-weight: 600;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    &:last-child {
+        border-bottom: none;
+        margin-bottom: 180px;
+        padding-bottom: 0;
+    }
+}
+
+/* For _medium images*/
+@media (min-width: 720px) {
+    .wrap {
+        width: 75%;
+    }
+    header {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url('../img/masthead_medium.jpg');
+        padding: 50px 0 380px;
+    }
+    /* Temp Chrome Windows Hack */
+    .win.chrome header {
+        background-attachment: scroll;
+    }
+    .logo {
+        margin-top: 0;
+    }
+    nav {
+        float: right;
+        margin: 25px 0 0 0;
+        padding: 0;
+        border-left: none;
+    }
+    nav ul li {
+        margin: 0 30px 0 0;
+        float: left;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .cta {
+        margin: 80px auto;
+        max-width: 470px;
+    }
+    .cta.cta_solo {
+        max-width: 200px;
+    }
+    .or {
+        margin: 20px 0 0 0;
+        width: 70px;
+        float: left;
+    }
+    .button {
+        width: 200px;
+        height: 60px;
+        padding: 19px 0 0 0;
+    }
+    .button-outline {
+        float: left;
+    }
+    .button-fill {
+        float: right;
+    }
+    .panel {
+        background-attachment: fixed;
+        height: 480px;
+        min-height: 100%;
+        padding: 230px 0 0 0;
+        margin-bottom: 100px;
+        font-size: 48px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .25) inset;
+    }
+    /* Temp Chrome Windows Hack */
+    .win.chrome .panel {
+        background-attachment: scroll;
+    }
+    .panel-work {
+        background-image: url('../img/client_medium.jpg');
+    }
+    .panel-blog {
+        background-image: url('../img/blog_medium.jpg');
+    }
+    .showcase h3 {
+        font-size: 48px;
+        margin: 60px 0 10px;
+    }
+    .showcase-link {
+        font-size: 18px;
+    }
+    .showcase p {
+        font-size: 22px;
+    }
+    .the-post h4 a {
+        font-size: 32px;
+    }
+    .the-post p {
+        font-size: 20px;
+    }
+    footer h5 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+    .twitter-button {
+        margin-top: 60px;
+    }
+    .twitter-button, .twitter-button svg {
+        width: 24px;
+        max-width: 24px;
+    }
+    .pagination {
+        display: block;
+        position: fixed;
+        top: 50%;
+    }
+    .pagination a svg path {
+        fill: rgba(0, 0, 0, .2);
+    }
+    .pagination a:hover svg path {
+        fill: $highlight;
+    }
+    .pagination.next {
+        right: 5%;
+    }
+    .pagination.previous {
+        left: 5%;
+    }
+    .archive_meta {
+        font-size: 16px;
+    }
+    .a_client a {
+        font-size: 22px;
+    }
+    h1.contact_title {
+        font-size: 32px;
+    }
+    h2.contact_subtitle {
+        font-size: 28px;
+    }
+    .contact_page p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    article blockquote {
+        padding-left: 30px;
+        margin: 20px 60px 60px;
+    }
+    article pre {
+        padding: 20px 40px;
+        border-radius: 4px;
+    }
+    article ul, article ol {
+        margin-left: 60px;
+    }
+}
+
+/* For _large images*/
+@media (min-width: 1024px) {
+    .wrap {
+        width: 65%;
+        max-width: 900px;
+    }
+    header {
+        background-image: url('../img/masthead_large.jpg');
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .panel-work {
+        background-image: url('../img/client_large.jpg');
+    }
+    .panel-blog {
+        background-image: url('../img/blog_large.jpg');
+    }
+    .showcase p {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    .post_title {
+        margin-bottom: 50px;
+    }
+    .blog_post p {
+        font-size: 24px;
+    }
+
+    .blog_post p.post_meta {
+        font-size: 14px;
+    }
+    .archive_desc {
+        font-size: 20px;
+    }
+    .other_title {
+        font-size: 32px;
+    }
+    article ul, article ol {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .date-stamp {
+        float: left;
+        max-width: 30px;
+        margin-right: 40px;
+        margin-top: 12px;
+    }
+    .date-stamp time, .date-stamp p {
+        display: block;
+    }
+    .date-stamp time {
+        font-size: 14px;
+    }
+    .date-stamp p {
+        font-size: 28px;
+    }
+    .the-post {
+        float: left;
+        max-width: 91%;
+    }
+    .the-post h4 a {
+        font-size: 42px;
+    }
+    .the-post p {
+        font-size: 24px;
+    }
+    .other_column {
+        float: left;
+        width: 32%;
+        margin-right: 2%;
+        border-bottom: 2px solid $highlight;
+        padding-bottom: 80px;
+        min-height: 180px;
+    }
+    .other_column.other_column_3 {
+        margin-right: 0;
+    }
+}
+
+.or, .showcase .or {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 200;
+}

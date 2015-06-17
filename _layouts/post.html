@@ -1,0 +1,50 @@
+{% include _head.html %}
+
+    <body>  
+        {% include _header.html %}
+        <article class="wrap blog_post">
+            <h1 class="post_title post_{{ page.slug }}">{{ page.title }}</h1>
+            {{content}}
+            <a class="twitter-button" href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text=Check%20Out%20{{ page.title }}&tw_p=tweetbutton&url={{ site.url }}{{ page.url }}&via=davemcnally" title="Tweet about this post" onclick="trackOutboundLink('https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text=Check%20Out%20{{ page.title }}&tw_p=tweetbutton&url={{ site.url }}{{ page.url }}&via=davemcnally'); return false;">{% include _icon_twitter.svg %}</a>
+            <p class="post_meta"><time datetime="{{ page.date }}">Published on {{ page.date | date: "%B %d, %Y" }}</time></p>
+
+            {% if page.previous %} 
+                <div class="pagination previous">
+                    <a href="{{ page.previous.url }}" class="navigate navigate_left" title="Read the previous post">{% include _arrow_left.svg %}</a>
+                </div>
+            {% endif %}
+            {% if page.next %} 
+                <div class="pagination next">
+                    <a href="{{ page.next.url }}" class="navigate navigate_right" title="Read the next post">{% include _arrow_right.svg %}</a>
+                </div>
+            {% endif %}
+
+        </article>
+        {% include _footer.html %}
+
+        {% if page.next and page.previous %} 
+            <script>
+                document.body.onkeyup = function(e){
+                    // Next article with left arrow
+                    if (e.keyCode == '37') { window.location = '{{ page.previous.url }}'; }
+                    if (e.keyCode == '39') { window.location = '{{ page.next.url }}'; }
+                };
+            </script>
+        {% elsif page.previous %} 
+            <script>
+                document.body.onkeyup = function(e){
+                    // Previous article with right arrow
+                    if (e.keyCode == '37') { window.location = '{{ page.previous.url }}'; }
+                };
+            </script>
+        {% elsif page.next %}
+            <script>
+                document.body.onkeyup = function(e){
+                    // Previous article with right arrow
+                    if (e.keyCode == '39') { window.location = '{{ page.next.url }}'; }
+                };
+            </script>
+        {% endif %}
+
+    </body>
+</html>

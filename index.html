@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<div class="wrap group">
+    <h1>I’m a designer and front-end developer with a passion for details and performance.</h1>
+    <div class="cta group">
+        <a href="{{ site.url }}/contact" class="button button-outline"><span>Learn More</span></a>
+        {% include _orhire.html %}
+    </div>
+</div>
+
+<section class="panel panel-work">
+    <div class="wrap">
+        <h2>Project Showcase</h2>
+    </div>
+</section>
+
+<section class="showcase showcase-angel">
+    <div class="wrap group">
+
+        {% include _showcase.html %}
+
+        <div class="cta group">
+            <a href="{{ site.url }}/work" class="button button-outline"><span>See More</span></a>
+            {% include _orhire.html %}
+        </div>
+    </div>
+</section>
+
+<section class="panel panel-blog">
+    <div class="wrap">
+        <h2>From The Blog</h2>
+    </div>
+</section>
+
+<section class="recentblog">
+    <div class="wrap group">
+        {% for post in site.posts limit: 3 %}
+        <div class="group summary">
+            <div class="date-stamp">
+                <time datetime="{{ post.date }}">{{ post.date | date: "%b"}}</time>
+                <p>{{ post.date | date: "%d"}}</p>
+            </div>
+            <div class="the-post">
+                <h4><a href="{{ post.url }}" title="Read This Post">{{ post.title }}</a></h4>
+                <p>{{ post.desc }}</p>
+            </div>
+        </div><!-- //summary -->
+        {% endfor %}
+        <div class="cta group">
+            <a href="{{ site.url }}/blog" class="button button-outline"><span>Read More</span></a>
+            {% include _orhire.html %}
+        </div>
+    </div>
+</section>

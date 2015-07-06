@@ -16,6 +16,10 @@ body {
     color: $light;
 }
 
+abbr {
+    border-bottom: 1px dotted rgba(0, 0, 0, .5);
+}
+
 code {
     font-family: "Source Code Pro", monospace;
     font-weight: 600;
@@ -347,19 +351,26 @@ h1.archive_title {
     }
 }
 
-h1.contact_title {
+h1.contact_title, h1.rates_title {
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;;
 }
 
-h2.contact_subtitle {
-    font-size: 22px;
-    margin: 30px 0 60px;
+h2.contact_subtitle, h2.rates_subtitle {
+    font-size: 24px;
     line-height: 1.5;
 }
 
-.contact_page p {
+h2.contact_subtitle {
+    margin: 30px 0 60px;
+}
+
+h2.rates_subtitle {
+    margin: 60px 0 20px;
+}
+
+.contact_page p, .rates_page p {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -581,13 +592,13 @@ article p a {
     .a_client a {
         font-size: 22px;
     }
-    h1.contact_title {
+    h1.contact_title, h1.rates_title {
+        font-size: 42px;
+    }
+    h2.contact_subtitle, h2.rates_subtitle {
         font-size: 32px;
     }
-    h2.contact_subtitle {
-        font-size: 28px;
-    }
-    .contact_page p {
+    .contact_page p, .rates_page p {
         font-size: 20px;
         line-height: 1.5;
         margin-bottom: 30px;

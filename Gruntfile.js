@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         watch: {
             jekyll: {
                 files: ['**/*', '!build/**/*', '!node_modules/**/*'],
-                tasks: ['build']
+                tasks: ['drafts']
             },
             livereload: {
                 files: ['build/**/*'],

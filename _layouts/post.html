@@ -5,7 +5,7 @@
         <article class="wrap blog_post">
             <h1 class="post_title post_{{ page.slug }}">{{ page.title }}</h1>
             {{content}}
-            <a class="twitter-button" href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text=Check%20Out%20{{ page.title }}&tw_p=tweetbutton&url={{ site.url }}{{ page.url }}&via=davemcnally" title="Tweet about this post" onclick="trackOutboundLink('https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text=Check%20Out%20{{ page.title }}&tw_p=tweetbutton&url={{ site.url }}{{ page.url }}&via=davemcnally'); return false;">{% include _icon_twitter.svg %}</a>
+            <a class="twitter-button" href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text=Check%20Out%20{{ page.title }}&tw_p=tweetbutton&url={{ site.url }}{{ page.url }}&via=davemcnally" title="Tweet about this post">{% include _icon_twitter.svg %}</a>
             <p class="post_meta"><time datetime="{{ page.date }}">Published on {{ page.date | date: "%B %d, %Y" }}</time></p>
 
             {% if page.previous %} 

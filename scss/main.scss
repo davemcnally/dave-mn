@@ -3,7 +3,7 @@ $light: #F1F1F1;
 $highlight: #B42C4F;
 $hover: #D8345E;
 
-$sans: 'Gotham A', 'Gotham B', Gotham, Helvetica, sans-serif;
+$sans: 'PT Sans Caption', 'Gotham', Helvetica, sans-serif;
 
 body {
     background: #FDFDFD;
@@ -642,7 +642,7 @@ article p a {
         margin-bottom: 50px;
     }
     .blog_post p {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .blog_post p.post_meta {
@@ -671,6 +671,7 @@ article p a {
     }
     .date-stamp time {
         font-size: 14px;
+        text-align: center;
     }
     .date-stamp p {
         font-size: 28px;
@@ -680,10 +681,10 @@ article p a {
         max-width: 91%;
     }
     .the-post h4 a {
-        font-size: 42px;
+        font-size: 40px;
     }
     .the-post p {
-        font-size: 24px;
+        font-size: 20px;
     }
     .other_column {
         float: left;

@@ -379,15 +379,20 @@ h2.rates_subtitle {
     }
 }
 
+.contact_page p a {
+    color: $highlight;
+    transition: all 0.3s ease;
+    &:hover {
+        color: $hover;
+    }
+}
+
+span.highlight {
+    color: $highlight;
+}
+
 #colophon {
     margin-bottom: 80px;
-    a {
-        color: $highlight;
-        transition: all 0.3s ease;
-        &:hover {
-            color: $hover;
-        }
-    }
     h1 {
         margin-bottom: 30px;
     }
